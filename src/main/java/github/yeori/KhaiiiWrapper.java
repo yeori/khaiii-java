@@ -1,5 +1,6 @@
 package github.yeori;
 
+import github.yeori.validation.PathHelper;
 import kr.bydelta.koala.khaiii.Khaiii;
 import kr.bydelta.koala.khaiii.KhaiiiWord;
 
@@ -12,9 +13,12 @@ public class KhaiiiWrapper {
    * Create a new KhaiiiWrapper instance.
    *
    * @param resourceDir The directory containing the Khaiii resources
+   * @param libraryDir The directory containing the Khaiii library(*.so files)
    */
-  public KhaiiiWrapper(String resourceDir) {
+  public KhaiiiWrapper(String resourceDir, String libraryDir) {
     this.resourceDir = resourceDir;
+    PathHelper.installLibraryPath(libraryDir);
+    PathHelper.validateResourcePath(resourceDir);
     openKhaiii();
   }
 

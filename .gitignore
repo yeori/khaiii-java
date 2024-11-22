@@ -1,0 +1,60 @@
+# IntelliJ IDEA
+.idea/
+out/
+*.iml
+*.ipr
+*.iws
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Gradle
+.gradle/
+build/
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+nbdist/
+
+# Other
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+# Uncomment this to ignore all local.properties files
+#local.properties
+
+# Kotlin specific
+*.class
+
+# Compiled class files
+*.jar
+!/lib/*.jar
+*.war
+*.ear
+
+# IDE specific files
+.DS_Store
+
+# OS specific files
+Thumbs.db
+
+# Generated files
+generated/
+
+/**/.venv/*

@@ -21,13 +21,11 @@ public class Sample00 {
   }
 
   public static void main(String[] args) {
-    String libkhaiiiPath = "/home/user/khaiii-jconnector/khaii-bin/lib";
-    System.setProperty("jna.library.path", libkhaiiiPath);
+    String libraryDir = "/home/user/khaiii-jconnector/khaii-bin/lib";
     String resourceDir = "/home/user/khaiii-jconnector/khaii-bin/files";
 
-    KhaiiiWrapper kw = new KhaiiiWrapper(resourceDir);
-    KhaiiiResponse res =
-        kw.analyze("아인슈타인의 상대성이론은 화장실에서도 유효하다.\n밖에서 기다릴 때는 시간이 느리게 흐르지만 안에서는 시간 가는 줄 모른다.");
+    KhaiiiWrapper kw = new KhaiiiWrapper(resourceDir, libraryDir);
+    KhaiiiResponse res = kw.analyze("나라면 주저없이 삼양라면을 선택하겠다.");
 
     System.out.println("[JSON]");
     String json = Formatters.formatJsonText(res);

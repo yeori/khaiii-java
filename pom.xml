@@ -9,8 +9,17 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>khaiii-java</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://github.com/yeori/khaiii-java</url>
+  <scm>
+    <url>https://github.com/yeori/khaiii-java</url>
+    <connection>scm:git:git@github.com:yeori/khaiii-java.git</connection>
+  </scm>
+  <licenses>
+    <license>
+        <name>MIT License</name>
+        <url>https://tldrlegal.com/license/mit-license</url>
+    </license>
+  </licenses>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,7 +34,6 @@
       <version>5.11.3</version>
       <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/net.java.dev.jna/jna -->
     <dependency>
         <groupId>net.java.dev.jna</groupId>
         <artifactId>jna</artifactId>
